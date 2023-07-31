@@ -14,7 +14,7 @@ app.get("/", (req: Request, res: Response) => {
     .json({ success: true, message: "server is running successfully" });
 });
 
-app.use("/api/v1", routerv1);
+app.use("/api/v1", routerv1)
 
 app.listen(PORT, () => {
   console.log(`app listening at http://localhost:${PORT}`);
